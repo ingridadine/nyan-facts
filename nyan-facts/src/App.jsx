@@ -1,9 +1,10 @@
 import './App.css';
-import {Button} from 'antd';
+import { NyanImg } from './components/NyanImg';
 
 function App() {
   return (
     <>
+      <NyanImg/>
     </>
   );
 }
