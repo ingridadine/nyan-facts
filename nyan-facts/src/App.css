@@ -1,0 +1,34 @@
+body {
+    background-color: #fce6ea;
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.nyan-img {
+    max-height: 480px;
+    border-radius: 10px;
+}
+
+.text-container {
+    max-width: 50vw;
+}
+
+.nyan-text {
+    font-size: 24px;
+    color: #457b9d;
+}

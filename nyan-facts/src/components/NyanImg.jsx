@@ -1,6 +1,8 @@
 import axios from "axios";
 import React from "react";
 
+import { Space, Spin } from "antd";
+
 const baseURL = 'https://api.thecatapi.com/v1/images/search';
 
 export const NyanImg = () => {
@@ -12,12 +14,14 @@ export const NyanImg = () => {
         });
     }, []);
 
-    if (!data) {
-       return <h1>Carregando imagem...</h1> 
-    }
-
     return (
-        <img src={data.url} alt="" />
+        <div className="img-container">
+            {!data && (<Space direction="vertical" align="center">
+                <Spin size="large"/>
+                <span>Encontrando nyan nyans 🐱✨</span>
+            </Space>)}
+            {data && (<img className="nyan-img" src={data.url} alt="" />)}
+        </div>
     );
 };
 
