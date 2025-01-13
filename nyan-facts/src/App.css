@@ -1,39 +1,39 @@
 body {
-    background-color: #fce6ea;
-    font-family: "DM Serif Text", serif;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+	background-color: #fce6ea;
+	font-family: "DM Serif Text", serif;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
 }
 
 .app-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 25px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 25px;
 }
 
 .img-container {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .nyan-img {
-    max-height: 480px;
-    border-radius: 10px;
+	max-height: 480px;
+	border-radius: 10px;
 }
 
 .text-container {
-    max-width: 50vw;
+	max-width: 50vw;
 }
 
 .nyan-text {
-    font-size: 24px;
-    color: #457b9d;
+	font-size: 24px;
+	color: #457b9d;
 }
 
 .update-btn {
-    width: 100px;
+	width: 100px;
 }

@@ -1,22 +1,24 @@
-import React from 'react';
-import { Button } from 'antd';
-import './App.css';
-import { NyanImg } from './components/NyanImg';
-import { NyanFact } from './components/NyanFact';
+import { Button } from "antd";
+import React from "react";
+import "./App.css";
+import { NyanFact } from "./components/NyanFact";
+import { NyanImg } from "./components/NyanImg";
 
 export const App = () => {
-  
-  const [clickCounter, setClickCounter] = React.useState(0);
-  
-  return (
-    <div className='app-container'>
-      <NyanImg counter={clickCounter}/>
-      <NyanFact counter={clickCounter}/>
-      <Button className="update-btn" onClick={() => {setClickCounter(clickCounter + 1)} }>
-        Mais fatos
-      </Button>
+	const [clickCounter, setClickCounter] = React.useState(0);
 
-      
-    </div>
-  );
+	return (
+		<div className="app-container">
+			<NyanImg counter={clickCounter} />
+			<NyanFact counter={clickCounter} />
+			<Button
+				className="update-btn"
+				onClick={() => {
+					setClickCounter(clickCounter + 1);
+				}}
+			>
+				Mais fatos
+			</Button>
+		</div>
+	);
 };
