@@ -9,6 +9,7 @@ export const NyanImg = ({ counter }) => {
 	const [data, setData] = React.useState(null);
 
 	React.useEffect(() => {
+		setData(null);
 		axios.get(baseURL).then((response) => {
 			setData(response.data[0]);
 		});

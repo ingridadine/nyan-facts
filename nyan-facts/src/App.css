@@ -1,6 +1,6 @@
 body {
 	background-color: #fce6ea;
-	font-family: "DM Serif Text", serif;
+	font-family: "Red Hat Display", serif;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -13,6 +13,16 @@ body {
 	align-items: center;
 	flex-direction: column;
 	gap: 25px;
+}
+
+.header-text {
+	font-family: "DM Serif Text", serif;
+	color: #a53860;
+}
+
+.footer-text {
+	color: #eb2f96;
+	padding-top: 20px;
 }
 
 .img-container {
@@ -31,7 +41,7 @@ body {
 
 .nyan-text {
 	font-size: 24px;
-	color: #457b9d;
+	color: #da627d;
 }
 
 .update-btn {
