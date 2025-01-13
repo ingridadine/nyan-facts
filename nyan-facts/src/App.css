@@ -10,6 +10,7 @@ body {
 
 .app-container {
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 25px;
 }
@@ -31,4 +32,8 @@ body {
 .nyan-text {
     font-size: 24px;
     color: #457b9d;
+}
+
+.update-btn {
+    width: 100px;
 }

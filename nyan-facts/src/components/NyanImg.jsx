@@ -5,14 +5,14 @@ import { Space, Spin } from "antd";
 
 const baseURL = 'https://api.thecatapi.com/v1/images/search';
 
-export const NyanImg = () => {
+export const NyanImg = ({counter}) => {
     const [data, setData] = React.useState(null);
 
     React.useEffect(() => {
         axios.get(baseURL).then((response) => {
             setData(response.data[0]);
         });
-    }, []);
+    }, [counter]);
 
     return (
         <div className="img-container">
